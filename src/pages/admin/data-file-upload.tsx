@@ -11,7 +11,7 @@ import {
   SpaceBetween,
 } from "@cloudscape-design/components";
 import { useContext, useState } from "react";
-import { AddDataData } from "./types";
+// import { AddDataData } from "./types";
 import { AppContext } from "../../common/app-context";
 import { ApiClient } from "../../common/api-client/api-client";
 import { Utils } from "../../common/utils";
@@ -21,7 +21,7 @@ import { getSignedUrl } from "../../components/chatbot/utils";
 // import { Workspace } from "../../../API";
 
 export interface DataFileUploadProps {
-  data: AddDataData;
+  // data: AddDataData;
   validate: () => boolean;
   // selectedWorkspace?: Workspace;
 }
