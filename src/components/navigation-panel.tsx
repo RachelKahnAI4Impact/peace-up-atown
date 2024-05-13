@@ -7,7 +7,6 @@ import {
   SpaceBetween,
 } from "@cloudscape-design/components";
 import useOnFollow from "../common/hooks/use-on-follow";
-import { useNavigationPanelState } from "../common/hooks/use-navigation-panel-state";
 import { AppContext } from "../common/app-context";
 import PencilSquareIcon from "../../public/images/pencil-square.jsx";
 import RouterButton from "../components/wrappers/router-button";
@@ -22,8 +21,8 @@ export default function NavigationPanel() {
   // const uid = ; 
   const apiClient = new ApiClient(appContext);
   const onFollow = useOnFollow();
-  const [navigationPanelState, setNavigationPanelState] =
-    useNavigationPanelState();
+  // const [navigationPanelState, setNavigationPanelState] =
+  //   useNavigationPanelState();
 
   const [sessions, setSessions] = useState<any[]>([]);
   const [items, setItems] = useState<SideNavigationProps.Item[]>([]);
@@ -119,12 +118,12 @@ export default function NavigationPanel() {
   }) => {
     // const sectionIndex = items.findIndex(detail.item);
     const sectionIndex = items.indexOf(detail.item);
-    setNavigationPanelState({
-      collapsedSections: {
-        ...navigationPanelState.collapsedSections,
-        [sectionIndex]: !detail.expanded,
-      },
-    });
+    // setNavigationPanelState({
+    //   collapsedSections: {
+    //     ...navigationPanelState.collapsedSections,
+    //     [sectionIndex]: !detail.expanded,
+    //   },
+    // });
   };
 
   return (
