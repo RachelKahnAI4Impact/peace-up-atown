@@ -71,7 +71,7 @@ const defaultPrompt = `Based on the project and organization description provide
 recommend the most relevant specific grant programs offered by the Massachusetts energy 
 and environment office that would be a good fit. Always boldly list the grant program name as a header, 
 a 2-3 sentence description and under sub-bullet points about the specific deadline date, 
-target audience, funding amount, match requirement, contact information, and a clickable accurate link listed on the relevant grant webpage.`;
+target audience, funding amount, match requirement, and contact information and the accurate link listed on the relevant grant webpage.`;
 const farmPrompt = `Based on the project description provided by user, 
 recommend the most relevant specific grant programs offered by the Massachusetts energy 
 and environment office that would be a good fit for a farm. Always boldly list the grant program name as a header, 
